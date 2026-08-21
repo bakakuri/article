@@ -167,19 +167,7 @@ function renderHome() {
   const nextLv = LEVELS[lvIdx + 1] || 'C2';
   const pct    = Math.min(100, Math.round((xp % 500) / 5));
 
-  const levelCards = LEVELS.map((lv, i) => {
-    const isActive = lv === level;
-    const isLocked = i > lvIdx;
-    const fill     = isActive ? pct : (i < lvIdx ? 100 : 0);
-    return `
-      <div class="level-card ${lv.toLowerCase()}">
-        <h3>${lv}</h3>
-        <p>${LEVEL_NAMES[lv]}</p>
-        ${isLocked
-          ? '<div style="margin-top:22px;font-size:26px">🔒</div>'
-          : `<div class="level-progress"><span style="width:${fill}%"></span></div>`}
-      </div>`;
-  }).join('');
+  
 
   document.getElementById('page-home').innerHTML = `
     <section class="hero">
@@ -192,7 +180,54 @@ function renderHome() {
         <div class="level-box">
           <small>დონე</small>
           <strong>${level}</strong>
+const levelCards = LEVELS.map((lv, i) => {
+  const isActive = lv === level;
+  const isLocked = i > lvIdx;
+  const fill = isActive ? pct : (i < lvIdx ? 100 : 0);
+
+  // A1 → a1.svg
+  // A2 → a2.svg
+  // B1 → b1.svg
+  // B2 → b2.svg
+  // C1 → c1.svg
+  const levelImg = `assets/images/levels/${lv.toLowerCase()}.svg`;
+
+  return `
+    <div class="level-card ${lv.toLowerCase()}${isLocked ? ' is-locked' : ''}">
+
+      <img
+        class="level-badge-image"
+        src="${levelImg}"
+        alt="${lv} — ${LEVEL_NAMES[lv]}"
+        loading="lazy"
+      />
+
+      <div class="level-card-overlay">
+
+        <div class="level-card-title">
+          ${lv}
         </div>
+
+        <div class="level-card-name">
+          ${LEVEL_NAMES[lv]}
+        </div>
+
+        ${
+          isLocked
+            ? '<div class="level-lock">🔒</div>'
+            : `
+              <div class="level-progress">
+                <span style="width:${fill}%"></span>
+              </div>
+            `
+        }
+
+      </div>
+
+    </div>
+  `;
+}).join('');
+</div>
         <div class="progress-info">
           <div class="progress-label">
             <span>შემდეგი: ${nextLv}</span>
