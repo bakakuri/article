@@ -893,3 +893,215 @@ section,header,main,footer{max-width:100%}[class*="grid"],[class*="card"]{max-wi
   .avatar                      { width:40px; height:40px; }
   .bottom-nav                  { min-height:68px; }
 }
+
+
+
+/* =========================================================
+   LEVEL BADGES
+   A1 / A2 / B1 / B2 / C1
+   ========================================================= */
+
+.levels {
+  align-items: stretch;
+}
+
+.level-card {
+  position: relative;
+  height: 220px;
+  min-height: 220px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 22px;
+  background: transparent;
+  cursor: pointer;
+  isolation: isolate;
+}
+
+/* Remove old level-card backgrounds */
+.level-card.a1,
+.level-card.a2,
+.level-card.b1,
+.level-card.b2,
+.level-card.c1 {
+  border: 0;
+  background: transparent;
+}
+
+/* The actual SVG badge */
+.level-badge-image {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  z-index: 1;
+
+  filter:
+    drop-shadow(0 10px 18px rgba(0,0,0,.28));
+
+  transition:
+    transform .22s ease,
+    filter .22s ease;
+}
+
+/* Hover effect */
+.level-card:hover .level-badge-image {
+  transform: translateY(-3px) scale(1.025);
+
+  filter:
+    drop-shadow(0 14px 24px rgba(0,0,0,.38));
+}
+
+/* Overlay */
+.level-card-overlay {
+  position: absolute;
+  inset: 0;
+
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: flex-end;
+
+  padding: 0 14px 18px;
+
+  pointer-events: none;
+}
+
+/*
+   The SVG already contains:
+   A1 / A2 / B1 / B2 / C1
+   and the level name.
+   Therefore we hide the old HTML text.
+*/
+
+.level-card-title,
+.level-card-name {
+  display: none;
+}
+
+/* Progress bar */
+.level-progress {
+  width: 68%;
+  height: 8px;
+
+  margin-top: 0;
+
+  border-radius: 999px;
+
+  background: rgba(8,14,35,.72);
+
+  box-shadow:
+    0 2px 8px rgba(0,0,0,.25);
+
+  overflow: hidden;
+}
+
+.level-progress span {
+  display: block;
+
+  height: 100%;
+
+  border-radius: inherit;
+
+  background:
+    linear-gradient(
+      90deg,
+      #8432ff,
+      #a84cff
+    );
+}
+
+/* Locked level */
+.level-lock {
+  margin-bottom: 18px;
+
+  width: 38px;
+  height: 38px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  background:
+    rgba(5,10,25,.82);
+
+  box-shadow:
+    0 4px 14px rgba(0,0,0,.35);
+
+  font-size: 20px;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  .levels {
+    display: flex;
+
+    gap: 10px;
+
+    overflow-x: auto;
+
+    padding:
+      0 2px 6px;
+
+    scrollbar-width: none;
+  }
+
+  .levels::-webkit-scrollbar {
+    display: none;
+  }
+
+  .level-card {
+    flex: 0 0 174px;
+
+    width: 174px;
+
+    height: 190px;
+    min-height: 190px;
+
+    border-radius: 20px;
+  }
+
+  .level-progress {
+    width: 66%;
+    height: 7px;
+  }
+
+  .level-lock {
+    margin-bottom: 14px;
+
+    width: 34px;
+    height: 34px;
+
+    font-size: 18px;
+  }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 390px) {
+
+  .level-card {
+    flex-basis: 158px;
+
+    width: 158px;
+
+    height: 174px;
+    min-height: 174px;
+  }
+}
