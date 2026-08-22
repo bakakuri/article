@@ -13,5 +13,5 @@
 <path d="M190 66 L334 85 L352 266 L207 246Z" fill="url(#book)" stroke="#b07aff" stroke-width="4"/>
 <path d="M334 85 L382 99 L398 273 L352 266Z" fill="#6d49a8" stroke="#a47cf0" stroke-width="3"/>
 <path d="M213 102 L315 116 M218 127 L318 140 M222 153 L320 166 M226 179 L322 191" stroke="#c8a9ff" stroke-width="5" stroke-linecap="round" opacity=".8"/>
-<text x="240" y="222" font-family="Arial,sans-serif" font-size="55" font-weight="900" fill="#f0dcff">A1</text>
+<text x="240" y="222" font-family="Arial,sans-serif" font-size="55" font-weight="900" fill="#f0dcff">article</text>
 </svg>
