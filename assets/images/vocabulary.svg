@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+<defs>
+<linearGradient id="v"><stop stop-color="#6924ff"/><stop offset=".5" stop-color="#a83dff"/><stop offset="1" stop-color="#e8b8ff"/></linearGradient>
+<linearGradient id="c"><stop stop-color="#008cff"/><stop offset=".55" stop-color="#28ddff"/><stop offset="1" stop-color="#c5fbff"/></linearGradient>
+<linearGradient id="g"><stop stop-color="#ff8b18"/><stop offset=".5" stop-color="#ffd84a"/><stop offset="1" stop-color="#fff2a1"/></linearGradient>
+<radialGradient id="r"><stop stop-color="#bd72ff"/><stop offset=".45" stop-color="#6426d8"/><stop offset="1" stop-color="#110a3c"/></radialGradient>
+<filter id="gl"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs><ellipse cx="81" cy="132" rx="44" ry="7" fill="#00cfff" opacity=".25" filter="url(#gl)"/><rect x="43" y="49" width="49" height="68" rx="7" fill="#0b4da8" stroke="#3ee0ff" stroke-width="3" transform="rotate(-8 68 83)"/><rect x="60" y="42" width="51" height="71" rx="7" fill="#087ddc" stroke="#70edff" stroke-width="3" transform="rotate(8 85 78)"/><rect x="50" y="45" width="50" height="69" rx="6" fill="#082d75" stroke="url(#c)" stroke-width="2.5"/><path d="M62 63h27" stroke="#d9fbff" stroke-width="3" stroke-linecap="round"/><text x="76" y="91" text-anchor="middle" font-family="Arial" font-size="29" font-weight="800" fill="#e6fcff">A</text><text x="76" y="108" text-anchor="middle" font-family="Arial" font-size="12" font-weight="700" fill="#9cecff">Wort</text><path d="m120 46 2 5 5 2-5 2-2 5-2-5-5-2 5-2z" fill="#ffd84d"/></svg>
