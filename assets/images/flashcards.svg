@@ -52,9 +52,9 @@
 
 <!-- A / Wort -->
 <rect x="143" y="86" width="58" height="20" rx="10" fill="#121E47" stroke="#3DD9FF" stroke-opacity=".7"/>
-<text x="172" y="101" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="800" fill="#9CF2FF">DE · A1</text>
+<text x="172" y="101" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="800" fill="#9CF2FF">A1 · C2</text>
 <text x="210" y="143" text-anchor="middle" font-family="Arial,sans-serif" font-size="52" font-weight="900" fill="#FFFFFF">A</text>
-<text x="210" y="168" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#BFEFFF">Wort</text>
+<text x="210" y="168" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#BFEFFF">art1cle</text>
 
 <!-- flip arrows -->
 <path d="M108 214c20 18 46 22 71 10" fill="none" stroke="url(#cyan)" stroke-width="3.5" stroke-linecap="round"/>
