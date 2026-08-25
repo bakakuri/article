@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300">
+
+<defs>
+  <linearGradient id="violet" x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0" stop-color="#6A20FF"/>
+    <stop offset=".5" stop-color="#B74CFF"/>
+    <stop offset="1" stop-color="#F0B8FF"/>
+  </linearGradient>
+  <linearGradient id="cyan" x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0" stop-color="#00A9FF"/>
+    <stop offset=".55" stop-color="#34D8FF"/>
+    <stop offset="1" stop-color="#B9FAFF"/>
+  </linearGradient>
+  <linearGradient id="gold" x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0" stop-color="#FF941A"/>
+    <stop offset=".55" stop-color="#FFD54A"/>
+    <stop offset="1" stop-color="#FFF1A0"/>
+  </linearGradient>
+  <linearGradient id="green" x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0" stop-color="#14B979"/>
+    <stop offset="1" stop-color="#7FF7BB"/>
+  </linearGradient>
+  <linearGradient id="bluePanel" x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0" stop-color="#102A77"/>
+    <stop offset=".6" stop-color="#0C63C8"/>
+    <stop offset="1" stop-color="#3BD7FF"/>
+  </linearGradient>
+  <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="4" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <filter id="soft" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="8"/>
+  </filter>
+  <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+    <feDropShadow dx="0" dy="10" stdDeviation="7" flood-color="#000" flood-opacity=".5"/>
+  </filter>
+</defs>
+
+<ellipse cx="210" cy="247" rx="125" ry="17" fill="#0B1333"/>
+<ellipse cx="210" cy="245" rx="116" ry="15" fill="none" stroke="#25D8FF" stroke-opacity=".55" stroke-width="2"/>
+
+<!-- floating grammar panel -->
+<g filter="url(#shadow)">
+  <rect x="101" y="72" width="220" height="132" rx="18" fill="#07183E" stroke="url(#bluePanel)" stroke-width="4"/>
+  <rect x="118" y="87" width="186" height="8" rx="4" fill="#6ACFFF" opacity=".35"/>
+  <rect x="118" y="103" width="76" height="11" rx="5.5" fill="#B76BFF" opacity=".85"/>
+  <rect x="203" y="103" width="76" height="11" rx="5.5" fill="#3FDFFF" opacity=".75"/>
+  <rect x="118" y="128" width="160" height="6" rx="3" fill="#A5B7E5" opacity=".55"/>
+  <rect x="118" y="142" width="136" height="6" rx="3" fill="#7389BC" opacity=".5"/>
+</g>
+
+<!-- syntax nodes -->
+<g filter="url(#glow)">
+  <circle cx="132" cy="170" r="10" fill="#12295D" stroke="#FFD84D" stroke-width="2.5"/>
+  <circle cx="210" cy="170" r="10" fill="#172056" stroke="#B860FF" stroke-width="2.5"/>
+  <circle cx="288" cy="170" r="10" fill="#102A5A" stroke="#48E7FF" stroke-width="2.5"/>
+</g>
+<path d="M142 170h58M220 170h58" stroke="#6E7FB2" stroke-width="2.4" stroke-dasharray="5 5"/>
+
+<!-- center rule badge -->
+<circle cx="210" cy="69" r="25" fill="#0B1538" stroke="url(#violet)" stroke-width="3" filter="url(#glow)"/>
+<path d="M197 63h26M197 69h26M197 75h17" stroke="#DCC5FF" stroke-width="2.5" stroke-linecap="round"/>
+<path d="m210 51 3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#FFD84D"/>
+
+<!-- grammar brackets -->
+<path d="M81 115h14v78H81M339 115h-14v78h14" fill="none" stroke="url(#cyan)" stroke-width="3" stroke-linecap="round"/>
+<path d="m353 65 3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#FFD84D"/>
+<circle cx="75" cy="208" r="3" fill="#A85CFF"/><circle cx="346" cy="208" r="3" fill="#58E8FF"/>
+</svg>

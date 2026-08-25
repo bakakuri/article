@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300">
+
+<defs>
+  <linearGradient id="violet" x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0" stop-color="#6A20FF"/>
+    <stop offset=".5" stop-color="#B74CFF"/>
+    <stop offset="1" stop-color="#F0B8FF"/>
+  </linearGradient>
+  <linearGradient id="cyan" x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0" stop-color="#00A9FF"/>
+    <stop offset=".55" stop-color="#34D8FF"/>
+    <stop offset="1" stop-color="#B9FAFF"/>
+  </linearGradient>
+  <linearGradient id="gold" x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0" stop-color="#FF941A"/>
+    <stop offset=".55" stop-color="#FFD54A"/>
+    <stop offset="1" stop-color="#FFF1A0"/>
+  </linearGradient>
+  <linearGradient id="green" x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0" stop-color="#14B979"/>
+    <stop offset="1" stop-color="#7FF7BB"/>
+  </linearGradient>
+  <linearGradient id="bluePanel" x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0" stop-color="#102A77"/>
+    <stop offset=".6" stop-color="#0C63C8"/>
+    <stop offset="1" stop-color="#3BD7FF"/>
+  </linearGradient>
+  <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="4" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <filter id="soft" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="8"/>
+  </filter>
+  <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+    <feDropShadow dx="0" dy="10" stdDeviation="7" flood-color="#000" flood-opacity=".5"/>
+  </filter>
+</defs>
+
+<ellipse cx="210" cy="246" rx="118" ry="17" fill="#0B1333"/>
+<ellipse cx="210" cy="245" rx="115" ry="16" fill="none" stroke="#8A43FF" stroke-opacity=".55" stroke-width="2"/>
+
+<!-- card stack -->
+<g filter="url(#shadow)">
+  <rect x="105" y="74" width="165" height="118" rx="16" fill="#132B70" stroke="#3DD9FF" stroke-width="3" transform="rotate(-12 187 133)"/>
+  <rect x="141" y="62" width="164" height="118" rx="16" fill="#4B1F93" stroke="#D56BFF" stroke-width="3" transform="rotate(10 223 121)"/>
+  <rect x="122" y="67" width="176" height="128" rx="18" fill="#0A173E" stroke="url(#violet)" stroke-width="4"/>
+</g>
+
+<!-- A / Wort -->
+<rect x="143" y="86" width="58" height="20" rx="10" fill="#121E47" stroke="#3DD9FF" stroke-opacity=".7"/>
+<text x="172" y="101" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="800" fill="#9CF2FF">DE · A1</text>
+<text x="210" y="143" text-anchor="middle" font-family="Arial,sans-serif" font-size="52" font-weight="900" fill="#FFFFFF">A</text>
+<text x="210" y="168" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#BFEFFF">Wort</text>
+
+<!-- flip arrows -->
+<path d="M108 214c20 18 46 22 71 10" fill="none" stroke="url(#cyan)" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M179 217l-3 10 10-3" fill="none" stroke="#55E7FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M312 214c-20 18-46 22-71 10" fill="none" stroke="url(#violet)" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M241 217l3 10-10-3" fill="none" stroke="#CF79FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+<!-- sparkle -->
+<path d="m326 69 4 9 9 4-9 4-4 9-4-9-9-4 9-4z" fill="#FFD84D" filter="url(#glow)"/>
+<circle cx="94" cy="92" r="3" fill="#52E9FF"/><circle cx="331" cy="133" r="3" fill="#AF5CFF"/>
+</svg>

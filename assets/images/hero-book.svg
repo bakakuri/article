@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300">
+
+<defs>
+  <linearGradient id="violet" x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0" stop-color="#6A20FF"/>
+    <stop offset=".5" stop-color="#B74CFF"/>
+    <stop offset="1" stop-color="#F0B8FF"/>
+  </linearGradient>
+  <linearGradient id="cyan" x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0" stop-color="#00A9FF"/>
+    <stop offset=".55" stop-color="#34D8FF"/>
+    <stop offset="1" stop-color="#B9FAFF"/>
+  </linearGradient>
+  <linearGradient id="gold" x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0" stop-color="#FF941A"/>
+    <stop offset=".55" stop-color="#FFD54A"/>
+    <stop offset="1" stop-color="#FFF1A0"/>
+  </linearGradient>
+  <linearGradient id="green" x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0" stop-color="#14B979"/>
+    <stop offset="1" stop-color="#7FF7BB"/>
+  </linearGradient>
+  <linearGradient id="bluePanel" x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0" stop-color="#102A77"/>
+    <stop offset=".6" stop-color="#0C63C8"/>
+    <stop offset="1" stop-color="#3BD7FF"/>
+  </linearGradient>
+  <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="4" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <filter id="soft" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="8"/>
+  </filter>
+  <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+    <feDropShadow dx="0" dy="10" stdDeviation="7" flood-color="#000" flood-opacity=".5"/>
+  </filter>
+</defs>
+
+<ellipse cx="220" cy="250" rx="130" ry="18" fill="#7135FF" opacity=".18" filter="url(#soft)"/>
+<ellipse cx="220" cy="235" rx="118" ry="18" fill="#0B1130" stroke="#B65CFF" stroke-opacity=".7" stroke-width="2"/>
+
+<!-- floating portal -->
+<path d="M162 220V99c0-45 31-78 68-78s68 33 68 78v121"
+      fill="#110C38" stroke="url(#violet)" stroke-width="5" filter="url(#shadow)"/>
+<path d="M179 218V102c0-34 22-59 51-59s51 25 51 59v116"
+      fill="none" stroke="#6B2BFF" stroke-width="4" opacity=".7"/>
+<ellipse cx="230" cy="112" rx="38" ry="55" fill="#4A1AB4" opacity=".35" filter="url(#glow)"/>
+<ellipse cx="230" cy="112" rx="25" ry="39" fill="#2A0A75" opacity=".8"/>
+<path d="M218 73c18 13 23 30 15 53" fill="none" stroke="#D8A6FF" stroke-width="3" stroke-linecap="round"/>
+
+<!-- smart book in front -->
+<g filter="url(#shadow)">
+  <path d="M119 175c28-18 53-18 80 0v43c-27-17-52-17-80-1z"
+        fill="#13204A" stroke="url(#cyan)" stroke-width="4"/>
+  <path d="M199 175c27-18 52-18 80 0v42c-28-16-53-16-80 1z"
+        fill="#15184A" stroke="url(#violet)" stroke-width="4"/>
+  <path d="M199 177v41" stroke="#D5C2FF" stroke-opacity=".55" stroke-width="2"/>
+  <path d="M132 190c20-9 37-7 54 2M132 200c20-9 37-7 54 2M212 192c18-9 35-11 54-2M212 202c18-9 35-11 54-2"
+        fill="none" stroke="#8CA3D5" stroke-width="2.2" stroke-linecap="round"/>
+</g>
+
+<!-- growth leaf -->
+<path d="M104 205c-15-15-17-33-4-53 13 17 16 34 4 53z" fill="url(#green)" filter="url(#glow)"/>
+<path d="M106 203c-9-25-6-50 8-68" fill="none" stroke="#53E7A1" stroke-width="4" stroke-linecap="round"/>
+<path d="M120 167c11-12 25-14 39-8-7 14-20 20-39 8z" fill="#49D99B"/>
+
+<!-- floating knowledge lines -->
+<rect x="250" y="71" width="58" height="10" rx="5" fill="#F0C2FF" opacity=".85"/>
+<rect x="250" y="91" width="74" height="10" rx="5" fill="#B879FF" opacity=".75"/>
+<rect x="250" y="111" width="47" height="10" rx="5" fill="#6AE7FF" opacity=".75"/>
+
+<!-- particles -->
+<circle cx="133" cy="74" r="3" fill="#58E8FF" filter="url(#glow)"/>
+<circle cx="322" cy="82" r="3" fill="#BE62FF" filter="url(#glow)"/>
+<path d="m340 150 3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#FFD84D"/>
+</svg>
