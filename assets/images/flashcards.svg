@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300">
-<defs><linearGradient id="p" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a744ff"/><stop offset="1" stop-color="#4b18b9"/></linearGradient><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f6cb70"/><stop offset="1" stop-color="#c78427"/></linearGradient></defs>
-<ellipse cx="180" cy="264" rx="130" ry="20" fill="#160d3b"/>
-<g transform="rotate(-23 175 150)"><rect x="72" y="54" width="160" height="190" rx="18" fill="#3c237d" stroke="#9b69ff" stroke-width="5"/><text x="104" y="145" font-family="Arial" font-size="64" font-weight="900" fill="#fff">📚</text><text x="110" y="184" font-family="Arial" font-size="22" fill="#d9c6ff">Haus</text></g>
-<g transform="rotate(9 210 145)"><rect x="110" y="42" width="160" height="190" rx="18" fill="url(#g)" stroke="#ffd990" stroke-width="5"/><text x="143" y="135" font-family="Arial" font-size="64" font-weight="900" fill="#5a2c10">♥️</text><text x="148" y="174" font-family="Arial" font-size="22" fill="#7b421c">Blume</text></g>
-<g transform="rotate(22 235 155)"><rect x="155" y="66" width="145" height="170" rx="18" fill="url(#p)" stroke="#c291ff" stroke-width="5"/><text x="185" y="148" font-family="Arial" font-size="40" font-weight="900" fill="#fff">✅❌</text><text x="185" y="184" font-family="Arial" font-size="20" font-weight="900" fill="#eadcff">სიტყვები</text></g>
-</svg>
